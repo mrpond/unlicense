@@ -224,7 +224,7 @@ def interpreter_can_dump_pe(pe_file_path: str) -> bool:
     pe_architecture = binary.header.machine
     return True
     
-def Unused -> bool:
+def unused() -> bool:
     # 64-bit OS on x86
     if current_platform == "AMD64":
         bitness = struct.calcsize("P") * 8
